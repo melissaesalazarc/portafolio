@@ -15,7 +15,7 @@ html, body, #root {
 }
 
 body {
-  background: linear-gradient(180deg, var(--bg), #021019);
+  background: linear-gradient(180deg, var(--bg), #0b0014);
   color: var(--text);
   font-family: 'Inter', sans-serif;
 }

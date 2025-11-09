@@ -42,6 +42,9 @@
   position: relative;
   z-index: 20;
   margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-photo {
@@ -51,4 +54,11 @@
   border-radius: 25px;
   position: relative;
   z-index: 10; /* sobre el blob */
+}
+
+.bubble-wrapper {
+  position: absolute;
+  top: -40px;     /* SUBE el globito */
+  right: -40px;   /* ACERCA el globito a la foto */
+  z-index: 30;    /* Asegura que quede adelante del blob */
 }

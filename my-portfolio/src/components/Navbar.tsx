@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <nav className="nav">
-      <div className="logo">MiPortfolio</div>
+      <div className="logo">Melissa's Portfolio</div>
 
       <ul className="nav-links">
         <li><a href="#">Home</a></li>

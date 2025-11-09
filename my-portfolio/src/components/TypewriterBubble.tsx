@@ -63,9 +63,7 @@ export default function TypewriterBubble({
         <span className="caret">|</span>
       </div>
 
-      <div className="bubble-avatar">
-        <img src="/src/assets/me.jpg" alt="avatar" />
-      </div>
+    
     </motion.div>
   );
 }

@@ -46,14 +46,14 @@ const Hero = () => {
 
       {/* FOTO + GLOBITO */}
       <div className="hero-right">
-        <img
-          src="/src/assets/me.png"
-          alt="yo"
-          className="hero-photo"
-        />
+        <div className="hero-right">
+  <img src="/src/assets/me.png" alt="yo" className="hero-photo" />
 
-        <TypewriterBubble texts={["Disponible para freelance y colaboraciones"]} />
-      </div>
+  <div className="bubble-wrapper">
+    <TypewriterBubble texts={["Disponible para freelance y colaboraciones"]} />
+  </div>
+</div>
+</div>
 
     </section>
   );
