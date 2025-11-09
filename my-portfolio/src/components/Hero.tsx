@@ -17,8 +17,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Hey There,<br />
-          <span className="highlight">I'm Melissa!</span>
+          Hi,<br />
+          <span className="highlight">I'm Melissa"</span>
         </motion.h1>
 
         <motion.h3
@@ -27,7 +27,7 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="subtext"
         >
-          Top Rated Designer
+          Frontend • UX/UI 
         </motion.h3>
 
         <motion.p
@@ -36,7 +36,7 @@ const Hero = () => {
           transition={{ duration: 1.2 }}
           className="desc"
         >
-          Diseño sitios hermosos y funcionales que venden ideas y experiencias.
+          I turn ideas into seamless digital experiences through intuitive design and clean, efficient code.
         </motion.p>
 
         <div className="socials">
@@ -50,7 +50,7 @@ const Hero = () => {
   <img src="/src/assets/me.png" alt="yo" className="hero-photo" />
 
   <div className="bubble-wrapper">
-    <TypewriterBubble texts={["Disponible para freelance y colaboraciones"]} />
+    <TypewriterBubble texts={["Crafting interfaces that look good and feel even better."]} />
   </div>
 </div>
 </div>
