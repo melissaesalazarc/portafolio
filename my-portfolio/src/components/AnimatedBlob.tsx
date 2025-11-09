@@ -1,4 +1,3 @@
-import React from "react";
 import "./AnimatedBlob.css";
 
 const AnimatedBlob = () => {
