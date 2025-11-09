@@ -5,46 +5,36 @@ import "./Hero.css";
 
 const Hero = () => {
   return (
-    <section className="hero-container">
-      
-      {/* BLOB ANIMADO */}
+    <section id="home" className="hero-container">
+
       <AnimatedBlob />
 
-      {/* TEXTOS IZQUIERDA */}
-      <div className="hero-left">
-        <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+      <motion.div
+        className="hero-left"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.4 }}   
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <motion.h1>
           Hi,<br />
           <span className="highlight">I'm Melissa</span>
         </motion.h1>
 
-        <motion.h3
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="subtext"
-        >
+        <motion.h3 className="subtext">
           Frontend • UX/UI
         </motion.h3>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.2 }}
-          className="desc"
-        >
+        <motion.p className="desc">
           I turn ideas into seamless digital experiences through intuitive design and clean, efficient code.
         </motion.p>
 
-        {/* ✅ TECH STACK GLASSMORPHISM */}
         <motion.div
           className="tech-stack"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.1 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 1, delay: 0.2 }}
         >
           <motion.span whileHover={{ scale: 1.1 }} className="tech-item">⚛️ React</motion.span>
           <motion.span whileHover={{ scale: 1.1 }} className="tech-item">🟦 TypeScript</motion.span>
@@ -54,11 +44,23 @@ const Hero = () => {
           <motion.span whileHover={{ scale: 1.1 }} className="tech-item">🟩 Node + Express</motion.span>
           <motion.span whileHover={{ scale: 1.1 }} className="tech-item">🐙 Git & GitHub</motion.span>
         </motion.div>
-      </div>
+      </motion.div>
 
-      {/* FOTO + GLOBITO */}
-      <div className="hero-right">
-        <img src="/src/assets/me.png" alt="yo" className="hero-photo" />
+      <motion.div
+        className="hero-right"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.4 }}
+        transition={{ duration: 0.9, delay: 0.15 }}
+      >
+        <motion.img
+          src="/src/assets/me.png"
+          alt="yo"
+          className="hero-photo"
+          initial={{ scale: 0.93, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
+        />
 
         <div className="bubble-wrapper">
           <TypewriterBubble
@@ -67,7 +69,7 @@ const Hero = () => {
             ]}
           />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

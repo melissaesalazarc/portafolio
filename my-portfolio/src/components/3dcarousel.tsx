@@ -9,7 +9,7 @@ export default function ThreeDCarousel() {
   const [direction, setDirection] = useState(1); 
   const [isHovering, setIsHovering] = useState(false);
 
-  const speed = 0.35; // ✅ más lento, más suave
+  const speed = 0.35; 
 
   const projects = [
     {

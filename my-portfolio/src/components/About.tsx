@@ -9,7 +9,7 @@ export default function About() {
         className="about-text"
         initial={{ opacity: 0, x: -40 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        viewport={{ amount: 0.2 }}
         transition={{ duration: 0.6 }}
       >
         <h2>About Me</h2>

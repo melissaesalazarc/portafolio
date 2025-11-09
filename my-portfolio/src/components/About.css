@@ -6,8 +6,10 @@
   height: 100vh;
   background: #0b0014;
   color: white;
+  gap: 40px; /* espacio entre texto y tarjetas */
 }
 
+/* Texto */
 .about-text {
   max-width: 44%;
 }
@@ -54,4 +56,80 @@
 .skill-card p {
   font-size: 15px;
   opacity: 0.75;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+
+/* Pantallas medianas / tabletas */
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 5%;
+    height: auto;
+  }
+
+  .about-text {
+    max-width: 90%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .about-text h2 {
+    font-size: 40px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  .about-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .skill-card {
+    width: 280px;
+    padding: 20px;
+  }
+
+  .skill-card h3 {
+    font-size: 18px;
+  }
+
+  .skill-card p {
+    font-size: 14px;
+  }
+}
+
+/* Móviles / pantallas pequeñas */
+@media (max-width: 480px) {
+  .about-text h2 {
+    font-size: 32px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+  }
+
+  .about-cards {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .skill-card {
+    width: 90%;
+    padding: 18px;
+  }
+
+  .skill-card h3 {
+    font-size: 16px;
+  }
+
+  .skill-card p {
+    font-size: 13px;
+  }
 }

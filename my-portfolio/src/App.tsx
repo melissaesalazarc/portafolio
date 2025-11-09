@@ -18,7 +18,7 @@ function App() {
           <Hero />
         </section>
 
-        <section className="snap-section">
+        <section id="about" className="snap-section">
           <About />
         </section>
 
