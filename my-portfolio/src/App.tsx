@@ -3,6 +3,8 @@ import Hero from "./components/Hero";
 import Section from "./components/Section";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import Projects from "./components/Projects";
+
 import "./App.css";
 
 function App() {
@@ -20,10 +22,8 @@ function App() {
         </section>
 
         <section className="snap-section">
-          <Section id="projects" title="Projects">
-            <p>Aquí irán tus proyectos.</p>
-          </Section>
-        </section>
+            <Projects />
+          </section>
 
         <section className="snap-section">
           <Section id="contact" title="Contact">
