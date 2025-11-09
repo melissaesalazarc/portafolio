@@ -1,0 +1,54 @@
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #0b0014;
+  color: white;
+  overflow: hidden;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-left {
+  z-index: 10;
+  max-width: 450px;
+}
+
+.hero-left h1 {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.highlight {
+  color: #ffb4ff;
+}
+
+.subtext {
+  margin-top: 20px;
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+.desc {
+  margin-top: 14px;
+  font-size: 17px;
+  opacity: 0.75;
+}
+
+.hero-right {
+  position: relative;
+  z-index: 20;
+  margin-right: 5%;
+}
+
+.hero-photo {
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 25px;
+  position: relative;
+  z-index: 10; /* sobre el blob */
+}

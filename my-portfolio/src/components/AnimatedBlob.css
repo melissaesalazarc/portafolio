@@ -1,0 +1,32 @@
+.blob {
+  width: 480px;
+  height: 480px;
+  background: linear-gradient(135deg, #ff80ff, #7a5cff, #ffd86b);
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  border-radius: 60% 40% 70% 30% / 45% 55% 35% 65%;
+  filter: blur(40px);
+  opacity: 0.65;
+  animation: morph 12s ease-in-out infinite;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 70% 30% / 45% 55% 35% 65%;
+    transform: translateY(-50%) scale(1);
+  }
+  33% {
+    border-radius: 40% 60% 30% 70% / 55% 45% 65% 35%;
+    transform: translateY(-48%) scale(1.05);
+  }
+  66% {
+    border-radius: 70% 30% 40% 60% / 35% 65% 55% 45%;
+    transform: translateY(-52%) scale(0.95);
+  }
+  100% {
+    border-radius: 60% 40% 70% 30% / 45% 55% 35% 65%;
+    transform: translateY(-50%) scale(1);
+  }
+}

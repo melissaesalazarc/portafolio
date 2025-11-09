@@ -1,72 +1,62 @@
-import { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Stage } from "@react-three/drei";
-import CanvasScene from "./CanvasScene";
 import { motion } from "framer-motion";
+import AnimatedBlob from "./AnimatedBlob";
 import TypewriterBubble from "./TypewriterBubble";
+import "./Hero.css";
 
-
-export default function Hero() {
+const Hero = () => {
   return (
-    <section className="hero hero-landing">
+    <section className="hero-container">
 
-      {/* ✅ NEW — gradient blob background */}
-      <div className="gradient-blob"></div>
+      {/* BLOB ANIMADO */}
+      <AnimatedBlob />
 
-      {/* Optional THREE.js canvas (super light) */}
-      <div className="hero-canvas">
-        <Canvas shadows camera={{ position: [0, 1.5, 5], fov: 50 }}>
-          <ambientLight intensity={0.5} />
-          <directionalLight position={[5, 5, 5]} intensity={0.8} />
-          <Suspense fallback={null}>
-            <Stage environment="city" intensity={0.6}>
-              <CanvasScene />
-            </Stage>
-          </Suspense>
-          <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={0.2} />
-        </Canvas>
+      {/* TEXTOS IZQUIERDA */}
+      <div className="hero-left">
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          Hey There,<br />
+          <span className="highlight">I'm Melissa!</span>
+        </motion.h1>
+
+        <motion.h3
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="subtext"
+        >
+          Top Rated Designer
+        </motion.h3>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.2 }}
+          className="desc"
+        >
+          Diseño sitios hermosos y funcionales que venden ideas y experiencias.
+        </motion.p>
+
+        <div className="socials">
+          ✅ iconos aquí luego
+        </div>
       </div>
 
-      {/* CONTENT */}
-      <motion.div
-        className="hero-content-landing"
-        initial={{ y: 40, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
-        <div className="hero-left">
-          <h1 className="hero-title">
-            Hey There,<br />
-            <span className="hero-name">I'm <span className="accent">Tu Nombre</span>!</span>
-          </h1>
+      {/* FOTO + GLOBITO */}
+      <div className="hero-right">
+        <img
+          src="/src/assets/me.png"
+          alt="yo"
+          className="hero-photo"
+        />
 
-          <div className="hero-small">
-            <h4>Top Rated Designer</h4>
-            <p className="hero-sub">
-              Diseño sitios hermosos y funcionales que venden ideas y experiencias.
-            </p>
-          </div>
-        </div>
+        <TypewriterBubble texts={["Disponible para freelance y colaboraciones"]} />
+      </div>
 
-        <div className="hero-right">
-          {/* FOTO */}
-          <div className="portrait-wrap">
-            <img src="/src/assets/me.png" alt="Tu foto" className="portrait" />
-          </div>
-
-          {/* BURBUJA TYPING */}
-          <TypewriterBubble
-            texts={[
-              "I design beautiful and functional websites that bring ideas to life.",
-              "Frontend · React · 3D · UI/UX",
-              "Disponible para freelance y colaboraciones."
-            ]}
-            typingSpeed={55}
-            deletingSpeed={30}
-            pauseBetween={1800}
-          />
-        </div>
-      </motion.div>
     </section>
   );
-}
+};
+
+export default Hero;
