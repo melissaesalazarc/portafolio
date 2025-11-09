@@ -20,7 +20,7 @@ export default function ThreeDCarousel() {
       company: "Neoris • 2024",
       description:
         "Interactive internal platform with user management, data visualization, and modular dashboards. I developed the frontend, built reusable components, and implemented login, user roles, and dynamic visualizations using network graphs.",
-      image: {neorisImg} ,
+      image: neorisImg ,
       url: "https://youtu.be/H0J7G12T8KI",
     },
     {
@@ -28,7 +28,7 @@ export default function ThreeDCarousel() {
       company: "XCIEN • 2025",
       description:
         "Real-time network visualization platform with user profiles and automated reports. I led the UX/UI and frontend development, built dashboards, authentication, user management, and data persistence with Firebase, and connected the frontend with backend services.",
-      image: {xcienImg},
+      image: xcienImg,
       url: "https://youtu.be/T3WI1LJKO6g",
     },
     {
@@ -36,7 +36,7 @@ export default function ThreeDCarousel() {
       company: "Comercializadora BAEMI • 2025",
       description:
         "Responsive website showcasing company history, services, and product catalog. I designed the information architecture, created the UI system, and built a clean, fast interface optimized for clarity and cross-device navigation.",
-      image: {baemiImg},
+      image: baemiImg,
       url: "https://www.baemigroup.com/",
     },
   ];
