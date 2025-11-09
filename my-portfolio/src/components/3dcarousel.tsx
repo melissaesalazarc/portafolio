@@ -13,28 +13,28 @@ export default function ThreeDCarousel() {
 
   const projects = [
     {
-      title: "Rediseño de Plataforma de Gestión",
-      company: "NovaTech",
+      title: "Dashboard Platform with Chatbot",
+      company: "Neoris • 2024",
       description:
-        "UI/UX + frontend para una plataforma moderna enfocada en interacción emocional y accesibilidad.",
-      image: "/src/assets/me2.png",
-      url: "#",
+        "Interactive internal platform with user management, data visualization, and modular dashboards. I developed the frontend, built reusable components, and implemented login, user roles, and dynamic visualizations using network graphs.",
+      image: "/src/assets/NEORIS.png",
+      url: "https://youtu.be/H0J7G12T8KI",
     },
     {
-      title: "E-commerce Minimalista",
-      company: "Lumina",
+      title: "Network Monitoring Platform",
+      company: "XCIEN • 2025",
       description:
-        "Experiencia clean con microinteracciones, visual design y arquitectura intuitiva.",
-      image: "/src/assets/me2.png",
-      url: "#",
+        "Real-time network visualization platform with user profiles and automated reports. I led the UX/UI and frontend development, built dashboards, authentication, user management, and data persistence with Firebase, and connected the frontend with backend services.",
+      image: "/src/assets/XCIEN.png",
+      url: "https://youtu.be/T3WI1LJKO6g",
     },
     {
-      title: "Dashboard Analítico",
-      company: "DataFlow",
+      title: "Business Website",
+      company: "Comercializadora BAEMI • 2025",
       description:
-        "Dashboard con visualizaciones avanzadas, dark mode y storytelling visual.",
-      image: "/src/assets/me2.png",
-      url: "#",
+        "Responsive website showcasing company history, services, and product catalog. I designed the information architecture, created the UI system, and built a clean, fast interface optimized for clarity and cross-device navigation.",
+      image: "/src/assets/BAEMI.png",
+      url: "https://www.baemigroup.com/",
     },
   ];
 
