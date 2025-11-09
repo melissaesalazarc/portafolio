@@ -1,7 +1,6 @@
 {
   "name": "my-portfolio",
   "private": true,
-  "homepage": "https://melissaesalazarc.github.io/portafolio",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
