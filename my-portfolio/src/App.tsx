@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Section from "./components/Section";
 import Footer from "./components/Footer";
+import About from "./components/About";
 import "./App.css";
 
 function App() {
@@ -15,9 +16,7 @@ function App() {
         </section>
 
         <section className="snap-section">
-          <Section id="about" title="About">
-            <p>Agrega aquí tu sección de sobre mí.</p>
-          </Section>
+          <About />
         </section>
 
         <section className="snap-section">
