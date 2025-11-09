@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import AnimatedBlob from "./AnimatedBlob";
 import TypewriterBubble from "./TypewriterBubble";
 import "./Hero.css";
+import meImg from "./assets/me.png";
+
 
 const Hero = () => {
   return (
@@ -54,7 +56,7 @@ const Hero = () => {
         transition={{ duration: 0.9, delay: 0.15 }}
       >
         <motion.img
-          src="/src/assets/me.png"
+          src={meImg} 
           alt="yo"
           className="hero-photo"
           initial={{ scale: 0.93, opacity: 0 }}
