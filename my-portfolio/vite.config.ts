@@ -3,5 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/", // 🔹 usa "/" para Vercel
+  base: "/", // <-- aquí es importante que sea "/" para Vercel
 });
