@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import "./3dcarousel.css";
-import neorisImg from "./assets/NEORIS.png";
-import xcienImg from "./assets/XCIEN.png";
-import baemiImg from "./assets/BAEMI.png";
+import neorisImg from "../assets/NEORIS.png";
+import xcienImg from "../assets/XCIEN.png";
+import baemiImg from "../assets/BAEMI.png";
 
 export default function ThreeDCarousel() {
   const sliderRef = useRef<HTMLDivElement | null>(null);

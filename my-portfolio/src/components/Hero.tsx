@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import AnimatedBlob from "./AnimatedBlob";
 import TypewriterBubble from "./TypewriterBubble";
 import "./Hero.css";
-import meImg from "./assets/me.png";
+import meImg from "../assets/me.png";
 
 
 const Hero = () => {
