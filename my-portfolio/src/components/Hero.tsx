@@ -6,7 +6,7 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <section className="hero-container">
-
+      
       {/* BLOB ANIMADO */}
       <AnimatedBlob />
 
@@ -18,7 +18,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           Hi,<br />
-          <span className="highlight">I'm Melissa"</span>
+          <span className="highlight">I'm Melissa</span>
         </motion.h1>
 
         <motion.h3
@@ -27,7 +27,7 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="subtext"
         >
-          Frontend • UX/UI 
+          Frontend • UX/UI
         </motion.h3>
 
         <motion.p
@@ -39,22 +39,35 @@ const Hero = () => {
           I turn ideas into seamless digital experiences through intuitive design and clean, efficient code.
         </motion.p>
 
-        <div className="socials">
-          ✅ iconos aquí luego
-        </div>
+        {/* ✅ TECH STACK GLASSMORPHISM */}
+        <motion.div
+          className="tech-stack"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.1 }}
+        >
+          <motion.span whileHover={{ scale: 1.1 }} className="tech-item">⚛️ React</motion.span>
+          <motion.span whileHover={{ scale: 1.1 }} className="tech-item">🟦 TypeScript</motion.span>
+          <motion.span whileHover={{ scale: 1.1 }} className="tech-item">💛 JavaScript</motion.span>
+          <motion.span whileHover={{ scale: 1.1 }} className="tech-item">🎨 Figma</motion.span>
+          <motion.span whileHover={{ scale: 1.1 }} className="tech-item">⚡ Tailwind</motion.span>
+          <motion.span whileHover={{ scale: 1.1 }} className="tech-item">🟩 Node + Express</motion.span>
+          <motion.span whileHover={{ scale: 1.1 }} className="tech-item">🐙 Git & GitHub</motion.span>
+        </motion.div>
       </div>
 
       {/* FOTO + GLOBITO */}
       <div className="hero-right">
-        <div className="hero-right">
-  <img src="/src/assets/me.png" alt="yo" className="hero-photo" />
+        <img src="/src/assets/me.png" alt="yo" className="hero-photo" />
 
-  <div className="bubble-wrapper">
-    <TypewriterBubble texts={["Crafting interfaces that look good and feel even better."]} />
-  </div>
-</div>
-</div>
-
+        <div className="bubble-wrapper">
+          <TypewriterBubble
+            texts={[
+              "Crafting interfaces that look good and feel even better.",
+            ]}
+          />
+        </div>
+      </div>
     </section>
   );
 };
